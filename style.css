@@ -1,0 +1,61 @@
+body,html{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.frontText {
+	color: white;
+	text-align: center;
+	font-size: 150%
+}
+.frontdiv {
+	width:100%;
+	height: 450px;
+	margin: 0;
+    padding: 0;
+}
+
+.new {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h1{margin:0;}
+
+.info{
+	margin-left: 15px;
+}
+
+.pic{
+	width:100%;
+	background-color: #262626;
+}
+div.imgcontain {
+	background-color: #262626;
+	margin: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	width: 15%;
+	transition-duration: 0.15s;
+	display: inline-block;
+}
+
+div.imgcontain:hover{
+	width:17%;
+	cursor: pointer;
+	transition-duration: 0.15s;
+}
+.projectinfo{
+	text-align: center;
+	background-color: #262626;
+}
+p.project{
+	color: white;
+	margin:auto;
+	font-size: 2.5vw;
+	font-family: Quicksand;
+}
+
