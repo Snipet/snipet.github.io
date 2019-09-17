@@ -51,12 +51,11 @@ div.imgcontain:hover{
 .projectinfo{
 	text-align: center;
 	background-color: #262626;
-	font-size: 2.5vw;
 }
 p.project{
 	color: white;
 	margin:auto;
-	font-size: 2.5vw;
+	font-size: 1.5vw;
 	font-family: Quicksand;
 }
 
