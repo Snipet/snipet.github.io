@@ -79,3 +79,7 @@ div.headnav {
 	color:#eee;
 	text-decoration: none;
 	transition:0.05s;
+}
+a,a:hover{
+	text-decoration:none;
+}
