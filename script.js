@@ -1,6 +1,6 @@
 function load(){
     if (window.location == "https://snipet.github.io/index.html") {
-        document.getElementByTag('title').innerHTML = "Redirecting...";
+        document.getElementByTagName('title').innerHTML = "Redirecting...";
         window.location = "https://snipet.github.io";
     }
 }
