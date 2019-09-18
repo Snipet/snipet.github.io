@@ -74,6 +74,8 @@ div.headnav {
         display: inline-block;
 	font-weight:900;
 	text-decoration: none;
+	transition:0.05;
 }
 .navbutton:hover {
 	color:#eee;
+	transition:0.05s;
