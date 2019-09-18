@@ -3,8 +3,6 @@ body,html{
     padding: 0;
 
 }
-
-
 .frontText {
 	color: white;
 	text-align: center;
@@ -83,6 +81,6 @@ div.headnav {
 a,a:hover{
 	text-decoration:none;
 }
-img .logo:hover{
+.logo:hover{
 	cursor:pointer;
 }
