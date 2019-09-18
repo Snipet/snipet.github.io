@@ -3,7 +3,7 @@ function load(){
         document.getElementsByTagName('title').innerHTML = "Redirecting...";
         window.location = "https://snipet.github.io";
     }else{
-        $("#area").load("something.html #area > *");
+        $("#area").load("navhead.html #area > *");
     }
     
 }
