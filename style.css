@@ -73,6 +73,7 @@ div.headnav {
         text-decoration: none;
         display: inline-block;
 	font-weight:900;
+	text-decoration: none;
 }
 .navbutton:hover {
 	color:#eee;
