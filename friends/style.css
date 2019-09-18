@@ -28,3 +28,8 @@ img {
   margin:7px;
   border-radius:3px;
 }
+
+/* Spaces out your text so it doesn't get squished */
+p{
+  margin:4px;
+}
