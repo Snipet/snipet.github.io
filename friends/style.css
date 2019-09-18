@@ -1,1 +1,30 @@
+/* Here's your CSS file. I already linked it to your webpage, as well as set up some stuff on the css end.
+Right now the font is Bootstrap's default font. */
 
+body, html {
+  margin:0px;
+  padding:0px;
+}
+a:hover, a:activate {
+  font-decoration:none;
+}
+
+/* This is what you'll want to put all of your content in. It gives your page a more modern look. You'll need to define the
+color in the div element itsef */
+div .fullpage {
+  width: 100%;
+  margin:0px;
+  height:400px;
+  padding:0px;
+}
+
+/* Makes headers a different font */
+h1,h2,h3{
+  font-family:Quicksand;
+}
+
+/*Gives your images a margin so they arn't squished, as well as a tiny border radius */
+img {
+  margin:7px;
+  border-radius:3px;
+}
