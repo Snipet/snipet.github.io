@@ -5,21 +5,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	  <script type="text/javascript" src="script.js"></script>
+	  <script type="text/javascript" src="player.js"></script>
     <link rel="icon" type="image/png" href="favicon3.png">
   </head>
-  <body>
+  <body onload="load()">
     <div class="headnav">
-		  <img src="/imgs/White.png" style="width:50px;height:50px;margin:7px;">
-		  <a class="navbutton" href="index.html">Home</a>
-		  <a class="navbutton" href="about.html">About</a>
-		  <a class="navbutton" href="platforms.html">Platforms</a>
-	  </div>
-	  <div class="frontdiv" style="background-color: #006fed;">
-		  <br>
-		  <br>
-		  <h1 class="frontText" style="font-size:12vw; font-family: Quicksand;">About</h1>
-		  <h2 class="frontText" style="font-size:3vw; font-family: Quicksand;">Me</h2>
-	  </div>
-    
-      
+	<img src="/imgs/White.png" style="width:50px;height:50px;margin:7px;">
+	<a class="navbutton" href="index.html">Home</a>
+	<a class="navbutton" href="about.html">About</a>
+	<a class="navbutton" href="platforms.html">Platforms</a>
+    </div>
+	<iframe id="player" src="https://scratch.mit.edu/projects/328966455/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+	</body>
+</html>
