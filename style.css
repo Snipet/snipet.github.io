@@ -83,3 +83,6 @@ div.headnav {
 a,a:hover{
 	text-decoration:none;
 }
+img .logo:hover{
+	cursor:pointer;
+}
