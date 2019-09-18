@@ -66,4 +66,11 @@ div.headnav {
 	position:fixed;
 	
 }
-
+.navbutton {
+	background color:#006ae3;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+}
