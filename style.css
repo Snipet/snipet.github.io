@@ -67,11 +67,10 @@ div.headnav {
 	
 }
 .navbutton {
-	background color:#0097fc;
         color: white;
         padding: 14px 25px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-	
+	font-weight:900;
 }
