@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Drop</title>
-    <source id="sound" src="drop.wav" type="audio/wav">
     <script>
       function bassDrop() {
         var x = document.getElementById("myAudio");
@@ -10,6 +9,9 @@
       }
   </head>
   <body>
+    <audio controls>
+      <source id="sound" src="drop.wav" type="audio/wav">
+    </audio>
     <p> Drohp te base </p>
   </body onload="bassDrop()">
 </html>
