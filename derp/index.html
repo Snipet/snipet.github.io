@@ -3,9 +3,13 @@
   <head>
     <title>Drop</title>
     <source id="sound" src="drop.wav" type="audio/wav">
-    
+    <script>
+      function bassDrop() {
+        var x = document.getElementById("myAudio");
+        x.play();
+      }
   </head>
   <body>
     <p> Drohp te base </p>
-  </body onload="var x = document.getElementById(\"myAudio\");x.play();">
+  </body onload="bassDrop()">
 </html>
