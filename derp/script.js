@@ -1,4 +1,5 @@
 function load(){
     var audio = new Audio('drop.wav');
-    audio.play(); 
+    audio.play();
+    document.getElementById('dropBoi').style.visibility = "hidden";
 }
