@@ -9,8 +9,9 @@ body,html{
 	font-size: 150%
 }
 .info-head{
-	font-weight:900;
-	font-size:15px;
+	font-weight: 700;
+	font-size: 37px;
+	margin: 10px;
 }
 .frontdiv {
 	width:100%;
