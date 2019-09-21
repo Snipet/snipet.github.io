@@ -84,3 +84,7 @@ a,a:hover{
 .logo:hover{
 	cursor:pointer;
 }
+.borderdiv{
+	border:8px;
+	border-radius:7px;
+}
