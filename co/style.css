@@ -87,4 +87,6 @@ a,a:hover{
 .borderdiv{
 	border:8px;
 	border-radius:7px;
+	border-style: solid;
+  	border-color: black;
 }
