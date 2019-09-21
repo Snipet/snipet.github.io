@@ -8,6 +8,10 @@ body,html{
 	text-align: center;
 	font-size: 150%
 }
+.info-head{
+	font-weight:900;
+	font-size:15px;
+}
 .frontdiv {
 	width:100%;
 	height: 450px;
