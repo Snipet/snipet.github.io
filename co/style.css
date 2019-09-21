@@ -85,6 +85,7 @@ a,a:hover{
 	cursor:pointer;
 }
 .borderdiv{
+	width:50%;
 	border:8px;
 	border-top:0px;
 	border-radius:7px;
