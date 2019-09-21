@@ -3,6 +3,7 @@ function load(){
         window.location = "https://snipet.github.io";
     }else{
         $("#area").load("responsive/navhead.html");
+        $("#projects-list").load("responsive/projects.html");
     }
     
 }
