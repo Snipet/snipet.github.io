@@ -5,9 +5,8 @@ document.getElementById('pic');
 document.title = user;
 
 function get(url) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url + "https://cors-anywhere.herokuapp.com/", false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+    fetch("https://cors-anywhere.herokuapp.com/" + url)
+    .then(response => response.text())
+    .catch(() => console.log("Can’t access " + url + " response."))
+    return response.text();
 }
-
