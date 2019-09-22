@@ -4,6 +4,7 @@
   height:100px;
   margin:auto;
   transition:0.15;
+  position:fixed;
 }
 .pic:hover{
   width:108px;
