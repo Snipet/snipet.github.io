@@ -9,6 +9,9 @@ function get(url)
 function downloadimg() {
     user = document.getElementById('username').value;
     size = document.getElementById('size').value;
-    download = document.getElementById('downloader')
-    download.src = "https://snipet.github.io/co/tools/scratch/userimage.html?user=" + user + "&size=" + size;
+    download = document.getElementById('downloader');
+    download.href = imglink(size, user);
 }
+function imglink(size, user){
+    var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
+    return "https://cdn2.scratch.mit.edu/get_image/user/" + userobj.id + "_" + size + "x" + size + ".png";}
