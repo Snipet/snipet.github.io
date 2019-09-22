@@ -7,11 +7,12 @@ function get(url)
 }
 
 function downloadimg() {
-    user = document.getElementById('username').value;
-    size = document.getElementById('size').value;
-    download = document.getElementById('downloader');
-    download.href = imglink(size, user);
-    download.download = user + size;
+    var user = document.getElementById('username').value;
+    var size = document.getElementById('size').value;
+    var download = document.getElementById('downloader');
+    var file = imglink(size, user);
+    download.href = file;
+    download.download = file;
 }
 function imglink(size, user){
     var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
