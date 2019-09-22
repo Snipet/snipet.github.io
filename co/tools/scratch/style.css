@@ -2,8 +2,14 @@
   margin:0;
   width:100px;
   height:100px;
+  margin:auto;
 }
 p{
   font-weight:700;
   font-size:45px;
+  display:block;
+  margin:auto;
 } 
+div{
+  width:200px;
+}
