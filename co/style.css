@@ -94,3 +94,12 @@ a,a:hover{
 	border-style: solid;
   	border-color: black;
 }
+.info-head{
+	font-weight:600;
+	font-size:40px;
+	text-align:center;
+}
+.info{
+	margin:7;
+	text-align:center;
+}
