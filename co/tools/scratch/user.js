@@ -1,5 +1,3 @@
-
-
 function get(url)
 {
     var xmlHttp = new XMLHttpRequest();
