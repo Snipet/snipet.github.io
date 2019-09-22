@@ -9,10 +9,10 @@ function get(url)
 function downloadimg() {
     var user = document.getElementById('username').value;
     var size = document.getElementById('size').value;
-    var download = document.getElementById('downloader');
     var file = imglink(size, user);
-    download.href = file;
-    download.download = file;
+    var result = document.getElementById('result');
+    result.src = file;
+    result.style.visibility = "visible";
 }
 function imglink(size, user){
     var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
