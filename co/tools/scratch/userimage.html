@@ -12,7 +12,7 @@
       return xmlHttp.responseText;} 
     function load(){
       var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + getp("user")))
-      location.href = "https://cdn2.scratch.mit.edu/get_image/user/" + userobj.id + "_" + getp("size") + "x" + getp("size");}
+      location.href = "https://cdn2.scratch.mit.edu/get_image/user/" + userobj.id + "_" + getp("size") + "x" + getp("size") + ".png";}
   </script>
 </head>
 <body>
