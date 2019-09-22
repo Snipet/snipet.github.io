@@ -10,5 +10,5 @@ function downloadimg() {
     user = document.getElementById('username').value;
     size = document.getElementById('size').value;
     download = document.getElementById('downloader')
-    download.src = "userimage.html?user=" + user + "&size=" + size;
+    download.src = "https://snipet.github.io/co/tools/scratch/userimage.html?user=" + user + "&size=" + size;
 }
