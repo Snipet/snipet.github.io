@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <script>
+    window.onload = load();
     function getp(p){
       var url = new URL(location.href);
       return url.searchParams.get(p);
