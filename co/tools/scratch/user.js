@@ -6,7 +6,7 @@ function get(url)
     return xmlHttp.responseText;
 }
 
-function download() {
+function downloadimg() {
     user = document.getElementById('username').value;
     size = document.getElementById('size').value;
     download = document.getElementById('downloader')
