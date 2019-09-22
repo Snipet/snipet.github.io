@@ -1,3 +1,10 @@
+.username{
+    width:70%;
+    border-radius:8px;
+    border:4px;
+    border-color:#eee;
+    background-color:#fff;
+}
 .result{
   visibility: hidden;
   margin-left: auto;
