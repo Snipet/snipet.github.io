@@ -11,8 +11,8 @@ function downloadimg() {
     if (Number.isInteger(size) == true) {
         var search = document.getElementById('search');
         search.innerHTML = "Loading...";
-        var user = document.getElementById('username').value;
-        var file = imglink(size, user);
+        var id = document.getElementById('id').value;
+        var file = imglink(size, id);
         var result = document.getElementById('result');
         result.src = file;
         result.style.visibility = "visible";
@@ -21,6 +21,5 @@ function downloadimg() {
         alert("Please enter a valid size");
     }
 }
-function imglink(size, user){
-    var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
-    return "https://cdn2.scratch.mit.edu/get_image/user/" + userobj.id + "_" + size + "x" + size + ".png";}
+function imglink(size, id){
+    return "https://cdn2.scratch.mit.edu/get_image/project/" + id + "_" + size + "x" + size + ".png";}
