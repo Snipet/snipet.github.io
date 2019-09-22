@@ -8,7 +8,7 @@ function get(url)
 
 function downloadimg() {
     var size = Number(document.getElementById('size').value);
-    if (size.isInteger == true) {
+    if (isInteger(size) == true) {
         var search = document.getElementById('search');
         search.innerHTML = "Loading...";
         var user = document.getElementById('username').value;
