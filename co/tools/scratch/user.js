@@ -11,6 +11,7 @@ function downloadimg() {
     size = document.getElementById('size').value;
     download = document.getElementById('downloader');
     download.href = imglink(size, user);
+    console.log(imglink(size, user));
 }
 function imglink(size, user){
     var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
