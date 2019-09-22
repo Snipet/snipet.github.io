@@ -1,11 +1,21 @@
-.username{
-  width: 75%;
-  padding: 12px 20px;
-  margin: 8px 0;
+.result{
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px
+  display: block;
+}
+.search-button{
+  background-color: #0282eb;
+  border: none;
+  border-radius:5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  font-size:20px;
-  font-family: Quicksand;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:45%;
 }
