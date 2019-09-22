@@ -3,14 +3,9 @@
   width:100px;
   height:100px;
   margin:auto;
-  transition:0.15;
   position:fixed;
 }
-.pic:hover{
-  width:108px;
-  height:108px;
-  border-radius:3px;
-  transition:0.15;
+
 p{
   font-weight:700;
   font-size:45px;
