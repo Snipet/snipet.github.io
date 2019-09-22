@@ -7,15 +7,19 @@ function get(url)
 }
 
 function downloadimg() {
-    var search = document.getElementById('search');
-    search.innerHTML = "Loading...";
-    var user = document.getElementById('username').value;
-    var size = document.getElementById('size').value;
-    var file = imglink(size, user);
-    var result = document.getElementById('result');
-    result.src = file;
-    result.style.visibility = "visible";
-    search.innerHTML = "Search!";
+    var size = Number(document.getElementById('size').value);
+    if (size.isInteger == true) {
+        var search = document.getElementById('search');
+        search.innerHTML = "Loading...";
+        var user = document.getElementById('username').value;
+        var file = imglink(size, user);
+        var result = document.getElementById('result');
+        result.src = file;
+        result.style.visibility = "visible";
+        search.innerHTML = "Search!";
+    }else{
+        alert("Please enter a valid size");
+    }
 }
 function imglink(size, user){
     var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
