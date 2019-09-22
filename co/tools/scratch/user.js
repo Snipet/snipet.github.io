@@ -1,3 +1,5 @@
+
+
 function get(url)
 {
     var xmlHttp = new XMLHttpRequest();
@@ -9,7 +11,7 @@ function get(url)
 function load() {
     var user = window.location.hash.substr(1);
     userJson = JSON.parse(get("https://api.scratch.mit.edu/users/" + user));
-    pic = document.getElementById('pfp');
+    document.getElementById('pfp').src = "https://cdn2.scratch.mit.edu/get_image/user/" + userJson.id + "_120x120.png";
     document.title = user;
-    pic.src = "https://cdn2.scratch.mit.edu/get_image/user/" + userJson.id + "_120x120.png";
+    document.getElementById('username').innerHTML = user;
 }
