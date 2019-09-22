@@ -13,4 +13,3 @@ function load() {
     document.title = user;
     pic.src = "https://cdn2.scratch.mit.edu/get_image/user/" + userJson.id + "_120x120.png";
 }
-window.onload = load();
