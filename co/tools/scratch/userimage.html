@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<head>
+  <script>
+    function getp(p){
+      var url = new URL(location.href);
+      return url.searchParams.get(p);
+    }
+    function get(url){
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", "https://cors-anywhere.herokuapp.com/" + url, false ); // false for synchronous request
+      xmlHttp.send( null );
+      return xmlHttp.responseText;} 
+    function load(){
+      var userobj = JSON.parse(get("https://api.scratch.mit.edu/users/" + getp("user")))
+      location.href = "https://cdn2.scratch.mit.edu/get_image/user/" + userobj.id + getp("size") + "x" + getp("size");
+    
+  </script>
+</head>
+<body>
