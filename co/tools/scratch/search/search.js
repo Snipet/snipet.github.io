@@ -28,4 +28,18 @@ function search() {
     console.log("term is not a number");
   }
 }
-
+function add(title, img, d){
+  var a = document.createElement("h3")                // Create a <h1> element
+  var b = document.createTextNode(title);     // Create a text node
+  a.appendChild(b); 
+  var c = document.createElement("img")                // Create a <h1> element
+  c.src = img;
+  var d = document.createElement("p")                // Create a <h1> element
+  var e = document.createTextNode(d);     // Create a text node
+  d.appendChild(e)
+  var f = document.createElement("div")
+  f.appendChild(a)
+  f.appendChild(d)
+  f.appendChild(f)
+  document.body.appendChild(f)
+}
