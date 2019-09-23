@@ -4,6 +4,9 @@ function load(){
     }else{
         $("#area").load("responsive/navhead.html");
         $("#projects-list").load("responsive/projects.html");
+        if(location.href == "https://snipet.github.io/about.html") {
+            loadAbout();
+        }
     }
     
 }
