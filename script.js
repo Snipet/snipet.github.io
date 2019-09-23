@@ -20,5 +20,5 @@ function get(url){
 
 function loadAbout(){
     var obj = JSON.parse(get("https://api.scratch.mit.edu/users/-Snipet-"));
-    document.getElementById('about').innerHTML = obj.bio;
+    document.getElementById('about').innerHTML = obj.profile.bio;
 }
