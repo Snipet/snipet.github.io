@@ -26,4 +26,6 @@ function search() {
   var term = url.searchParams.get("q");
   if (isNaN(term)){
     console.log("term is not a number");
+  }
 }
+
