@@ -25,7 +25,12 @@ function search() {
   var url = new URL(location.href);
   var term = url.searchParams.get("q");
   if (isNaN(term)){
-    alert("ya yeee");
+    r = JSON.parse(get("https://api.scratch.mit.edu/users/" + term));
+    if (r.code != "NotFound"){
+      add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + r.id + "400x400", r.profile.bio);
+    }else{
+      alert("Not a user");
+    }
   }
 }
 function add(title, img, desc){
