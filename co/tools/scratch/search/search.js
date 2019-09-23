@@ -27,20 +27,23 @@ function search() {
   if (isNaN(term)){
     r = JSON.parse(get("https://api.scratch.mit.edu/users/" + term));
     if (r.code != "NotFound"){
-      add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + r.id + "_400x400.png", r.profile.bio);
+      add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + r.id + "_400x400.png", r.profile.bio, "user");
     }else{
       alert("Not a user");
     }
   }
 }
-function add(title, img, desc){
-  var a = document.createElement("h3")                // Create a <h1> element
-  var b = document.createTextNode(title);     // Create a text node
-  a.appendChild(b); 
-  var c = document.createElement("img")                // Create a <h1> element
+function add(title, img, desc, type){
+  var a = document.createElement("h3")
+  var b = document.createTextNode(title);
+  a.appendChild(b);
+  var c = document.createElement("img")
   c.src = img;
-  var d = document.createElement("p")                // Create a <h1> element
-  var e = document.createTextNode(desc);     // Create a text node
+  if(type == "user"){
+    c.style = "width:100px;height:100px;";
+  }
+  var d = document.createElement("p")
+  var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div")
   f.appendChild(document.createElement("hr"));
