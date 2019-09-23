@@ -46,7 +46,6 @@ function add(title, img, desc, type){
   var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div")
-  f.appendChild(document.createElement("hr"));
   f.appendChild(a)
   f.appendChild(c)
   f.appendChild(d)
