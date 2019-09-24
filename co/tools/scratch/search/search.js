@@ -67,7 +67,7 @@ function search(){
   if (type == "username"){
     add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + uObj.id + "_400x400.png", uObj.profile.bio, "user");
   }
-  if (type == "search"){
+  if (sObj != null){
     for (i in sObj){
       var project = sObj[i];
       add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "user");
