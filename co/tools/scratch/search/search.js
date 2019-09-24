@@ -28,13 +28,14 @@ function search() {
     r = JSON.parse(get("https://api.scratch.mit.edu/users/" + term));
     if (r.code != "NotFound"){
       add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + r.id + "_400x400.png", r.profile.bio, "user");
-    }else{
       obj = JSON.parse(get("https://api.scratch.mit.edu/search/projects?q=" + term + "&limit=8"));
       for (i in obj){
         var project = obj[i];
         add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "user");
       }
-    }
+      }else{
+      alert("No Results");
+      }
   }
 }
 function add(title, img, desc, type){
