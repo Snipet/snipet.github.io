@@ -52,8 +52,6 @@ function search(){
       type = "username";
     }else{
       type = "search";
-    }else{
-      type = "id";
     }
   }
   
