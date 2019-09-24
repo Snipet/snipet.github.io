@@ -32,7 +32,7 @@ function search() {
       obj = JSON.parse(get("https://api.scratch.mit.edu/search/projects?q=" + term + "&limit=8"));
       for (i in obj){
         var project = obj[i];
-        add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions);
+        add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "user");
       }
     }
   }
