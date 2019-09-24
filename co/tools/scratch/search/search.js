@@ -91,7 +91,7 @@ function add(title, img, desc, type){
   }
   if (type == "project") {
     c.style = "width:240px;height:180px;";
-    f.style = "border-left: 10px solid #ff0404;";
+    f.style = "border-color:#ff0404;";
   }
   f.appendChild(a)
   f.appendChild(c)
