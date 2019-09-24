@@ -1,1 +1,11 @@
 <!DOCTYPE html>
+<script>
+  function choose(arr){
+    return arr[Math.random(0, arr.length-1)];
+  }
+  function pick(){
+    var a = ["cat", "dog", "yeet", "yote", "fred"];
+    document.write(choose(a));
+  }
+  window.onload = pick();
+</script>
