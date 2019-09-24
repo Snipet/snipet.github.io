@@ -70,7 +70,7 @@ function search(){
   if (sObj != null){
     for (i in sObj){
       var project = sObj[i];
-      add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "user");
+      add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "project");
       }
   }
 }
@@ -84,16 +84,16 @@ function add(title, img, desc, type){
   a.appendChild(b);
   var c = document.createElement("img")
   c.src = img;
-  if(type == "user"){
-    c.style = "width:100px;height:100px;";
-  }
-  if (type == "project") {
-    c.style = "width:240px;height:180px;";
-  }
   var d = document.createElement("p")
   var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div")
+  if(type == "user"){
+    c.style = "width:100px;height:100px;";
+  }
+  if (type == "project") {
+    c.style = "width:240px;height:180px;border-left: 10px solid #ff0404;";
+  }
   f.appendChild(a)
   f.appendChild(c)
   f.appendChild(d)
