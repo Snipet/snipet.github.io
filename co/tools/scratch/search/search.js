@@ -47,6 +47,9 @@ function add(title, img, desc, type){
   if(type == "user"){
     c.style = "width:100px;height:100px;";
   }
+  if (type == "project") {
+    c.style = "width:240px;height:180px;";
+  }
   var d = document.createElement("p")
   var e = document.createTextNode(desc);
   d.appendChild(e)
