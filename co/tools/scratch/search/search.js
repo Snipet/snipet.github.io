@@ -21,6 +21,7 @@ function getl(containerID, childID) {
     return elm;
 }
 
+// Old search method; needs revised
 function search() {
   var url = new URL(location.href);
   var term = url.searchParams.get("q");
