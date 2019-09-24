@@ -57,18 +57,18 @@ function search(){
   
   //get data from api
   if (type == "username" || type == "search"){
-    var sObj = JSON.parse(get("https://api.scratch.mit.edu/search/projects?q=" + term + "&limit=8"));
+    var sObj = JSON.parse(get("https://api.scratch.mit.edu/search/projects?q=" + term + "&limit=20"));
     var uObj = JSON.parse(get("https://api.scratch.mit.edu/users/" + term));
   }
 
   //Display data
   if (type == "username"){
-    add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + uObj.id + "_400x400.png", uObj.profile.bio, "user");
+    add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + uObj.id + "_400x400.png", uObj.profile.bio, "user", "https://scratch.mit.edu/users/" + term);
   }
   if (sObj != null){
     for (i in sObj){
       var project = sObj[i];
-      add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "project");
+      add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "project", "https://scratch.mit.edu/projects/" + project.id);
       }
   }
 }
@@ -76,27 +76,28 @@ function search(){
 
 
 
-function add(title, img, desc, type){
-  var a = document.createElement("h3")
+function add(title, img, desc, type, link){
+  var a = document.createElement("h3");
   var b = document.createTextNode(title);
   a.appendChild(b);
-  var c = document.createElement("img")
+  var c = document.createElement("img");
   c.src = img;
-  var d = document.createElement("p")
+  var d = document.createElement("p");
   var e = document.createTextNode(desc);
   d.appendChild(e)
-  var f = document.createElement("div")
+  var f = document.createElement("div");
+  f.onclick = function() {window.location.href = link;};
   if(type == "user"){
     c.style = "width:100px;height:100px;";
   }
   if (type == "project") {
     c.style = "width:240px;height:180px;";
-    f.style = "border-color:#ff0404;";
+    f.style = "border-color:#f7891b;";
   }
-  f.appendChild(a)
-  f.appendChild(c)
-  f.appendChild(d)
-  document.body.appendChild(f)
+  f.appendChild(a);
+  f.appendChild(c);
+  f.appendChild(d);
+  document.body.appendChild(f);
 }
 function ws(s) {
   return s.indexOf(' ') >= 0;

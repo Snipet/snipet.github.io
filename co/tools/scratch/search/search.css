@@ -1,11 +1,18 @@
 div {
-  border-left: 14px solid #0092ff;
-  background-color: white;
-  margin-top:10px;
-  margin-bottom:10px;
-  margin-left:15px;
-  margin-right:20px;
+	border-left: 14px solid #0092ff;
+	border-radius: 10px;
+	background-color: white;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:15px;
+	margin-right:20px;
+	transition:0.1s;
+}
+div:hover{
+	cursor:pointer;
+	filter: brightness(90%);
+	transition:0.07s;
 }
 h1,h2,h3,h4,h5,h6,p,img{
-  margin:6px;
+	margin:6px;
 }
