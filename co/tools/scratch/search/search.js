@@ -22,7 +22,7 @@ function getl(containerID, childID) {
 }
 
 // Old search method; needs revised
-function search() {
+function oldSearch() {
   var url = new URL(location.href);
   var term = url.searchParams.get("q");
   if (isNaN(term)){
@@ -39,6 +39,47 @@ function search() {
       }
   }
 }
+// New search algorithm
+function search(){
+  //Assign Vars
+  var url = new URL(location.href);
+  var term = url.searchParams.get("q");
+  var type = "";
+  
+  //Determine Type
+  if (isNaN(term)) {
+    if(ws(term)){
+      type = "username";
+    }else{
+      type = "search";
+    }else{
+      type = "id";
+    }
+  }
+  
+  //get data from api
+  if (type == "username" || type == "search"){
+    var sObj = JSON.parse(get("https://api.scratch.mit.edu/search/projects?q=" + term + "&limit=8"));
+  }
+  if (type == "username"){
+    var uObj = JSON.parse(get("https://api.scratch.mit.edu/users/" + term));
+  }
+  
+  //Display data
+  if (type == "username"){
+    add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + sObj.id + "_400x400.png", sObj.profile.bio, "user");
+  }
+  if (type == "search"){
+    for (i in uObj){
+      var project = uObj[i];
+      add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "user");
+      }
+  }
+}
+
+
+
+
 function add(title, img, desc, type){
   var a = document.createElement("h3")
   var b = document.createTextNode(title);
@@ -59,4 +100,7 @@ function add(title, img, desc, type){
   f.appendChild(c)
   f.appendChild(d)
   document.body.appendChild(f)
+}
+function ws(s) {
+  return s.indexOf(' ') >= 0;
 }
