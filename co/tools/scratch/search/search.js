@@ -58,11 +58,9 @@ function search(){
   //get data from api
   if (type == "username" || type == "search"){
     var sObj = JSON.parse(get("https://api.scratch.mit.edu/search/projects?q=" + term + "&limit=8"));
-  }
-  if (type == "username"){
     var uObj = JSON.parse(get("https://api.scratch.mit.edu/users/" + term));
   }
-  
+
   //Display data
   if (type == "username"){
     add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + uObj.id + "_400x400.png", uObj.profile.bio, "user");
