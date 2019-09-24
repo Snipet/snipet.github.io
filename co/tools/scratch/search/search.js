@@ -33,6 +33,7 @@ function search() {
       for (i in obj){
         var project = obj[i];
         add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions);
+      }
     }
   }
 }
