@@ -1,5 +1,8 @@
 function goto(){
-  location.href = "search.html?q=" + document.getElementById('term').value;
+  var ifr = document.getElementById('results')
+  ifr.src = "search.html?q=" + document.getElementById('term').value;
+  ifr.style.height = ifr.contentWindow.document.body.scrollHeight + 'px';
+  
 }
 
 function get(url)

@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="search.js"></script>
-  <title>Search Scratch</title>
+	<link rel="stylesheet" type="text/css" href="/co/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="search.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<link rel="icon" type="image/png" href="/favicon3.png">
+
+	<title>Project Image</title>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116606137-2"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-116606137-2');
+	</script>
 </head>
 <body>
-  <input id="term" type="text">
-  <button id="search" onclick="goto();">Search</button>
+	<div class="frontdiv" style="background-color: #3acf7f;height:270px;">
+		<br>
+		<br>
+		<input class="username" type="text" id="term" placeholder="Search...">
+		<button type="button" id="search" class="search-button" onclick="goto();">Search!</a>
+	</div>
+	<iframe src="" id="results" frameborder="0" scrolling="no">
 </body>
 </html>
