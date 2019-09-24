@@ -1,8 +1,10 @@
 function goto(){
-  var ifr = document.getElementById('results')
-  ifr.src = "search.html?q=" + document.getElementById('term').value;
-  ifr.style.height = ifr.contentWindow.document.body.scrollHeight + 'px';
-  
+	var ifr = document.getElementById('results')
+	ifr.src = "search.html?q=" + document.getElementById('term').value; 
+	resizeIframe('results');
+}
+function resizeIframe(id) {
+    document.getElementById(id).style.height = document.getElementById(id).contentWindow.document.body.offsetHeight + 20 + 'px';
 }
 
 function get(url)
