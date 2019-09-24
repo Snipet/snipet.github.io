@@ -49,9 +49,9 @@ function search(){
   //Determine Type
   if (isNaN(term)) {
     if(ws(term)){
-      type = "username";
-    }else{
       type = "search";
+    }else{
+      type = "username";
     }
   }
   
@@ -65,11 +65,11 @@ function search(){
   
   //Display data
   if (type == "username"){
-    add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + sObj.id + "_400x400.png", sObj.profile.bio, "user");
+    add(term, "https://cdn2.scratch.mit.edu/get_image/user/" + uObj.id + "_400x400.png", uObj.profile.bio, "user");
   }
   if (type == "search"){
-    for (i in uObj){
-      var project = uObj[i];
+    for (i in sObj){
+      var project = sObj[i];
       add(project.title, "https://cdn2.scratch.mit.edu/get_image/project/" + project.id + "_400x400.png", project.instructions, "user");
       }
   }
