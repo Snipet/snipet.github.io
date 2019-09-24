@@ -92,7 +92,8 @@ function add(title, img, desc, type){
     c.style = "width:100px;height:100px;";
   }
   if (type == "project") {
-    c.style = "width:240px;height:180px;border-left: 10px solid #ff0404;";
+    c.style = "width:240px;height:180px;";
+    f.style = "border-left: 10px solid #ff0404;";
   }
   f.appendChild(a)
   f.appendChild(c)
