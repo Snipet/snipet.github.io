@@ -23,9 +23,9 @@ div.headnav {
 	transition:0.05;
 }
 .navbutton:hover {
-	color:#eee;
+	color:#ffebeb;
 	text-decoration: none;
-	transition:0.05s;
+	transition:0.03s;
 }
 
 a:hover, a:activate {
