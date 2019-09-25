@@ -1,6 +1,7 @@
 function goto(){
 	var ifr = document.getElementById('results')
 	ifr.src = "search.html?q=" + document.getElementById('term').value; 
+	document.title = document.getElementById('term').value;
 	resizeIframe('results');
 }
 function resizeIframe(id) {
