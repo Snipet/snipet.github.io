@@ -89,7 +89,7 @@ function add(title, img, desc, type, link){
   var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div");
-  f.onclick = function() {location.href = link;};
+  f.onclick = function() {top.window.location.href = link;};
   if(type == "user"){
     c.style = "width:100px;height:100px;";
   }
