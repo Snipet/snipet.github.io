@@ -79,9 +79,6 @@ function search(){
   }
 }
 
-
-
-
 function add(title, img, desc, type, link){
   var a = document.createElement("h3");
   var b = document.createTextNode(title);
@@ -92,8 +89,7 @@ function add(title, img, desc, type, link){
   var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div");
-  var aa = document.createElement("a");
-	aa.href = link;
+  f.onclick = function() {window.location.href = link;};
   if(type == "user"){
     c.style = "width:100px;height:100px;";
   }
@@ -104,9 +100,10 @@ function add(title, img, desc, type, link){
   f.appendChild(a);
   f.appendChild(c);
   f.appendChild(d);
-	aa.appendChild(f)
-  document.body.appendChild(aa);
+  document.body.appendChild(f);
 }
+
+
 function ws(s) {
   return s.indexOf(' ') >= 0;
 }
