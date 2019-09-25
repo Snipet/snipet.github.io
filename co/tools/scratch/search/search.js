@@ -4,7 +4,7 @@ function goto(){
 	resizeIframe('results');
 }
 function resizeIframe(id) {
-    document.getElementById(id).style.height = document.getElementById(id).contentWindow.document.body.offsetHeight + 20 + 'px';
+    top.window.document.getElementById(id).style.height = document.getElementById(id).contentWindow.document.body.offsetHeight + 20 + 'px';
 }
 
 function get(url)
@@ -91,7 +91,7 @@ function add(title, img, desc, type, link){
   var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div");
-  f.onclick = function() {window.location.href = link;};
+  f.onclick = function() {top.window.location.href = link;};
   if(type == "user"){
     c.style = "width:100px;height:100px;";
   }
