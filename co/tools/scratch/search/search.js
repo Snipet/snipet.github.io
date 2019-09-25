@@ -92,7 +92,8 @@ function add(title, img, desc, type, link){
   var e = document.createTextNode(desc);
   d.appendChild(e)
   var f = document.createElement("div");
-  f.onclick = function() {window.location.href = link;};
+  var aa = document.createElement("a");
+	aa.href = link;
   if(type == "user"){
     c.style = "width:100px;height:100px;";
   }
@@ -103,7 +104,8 @@ function add(title, img, desc, type, link){
   f.appendChild(a);
   f.appendChild(c);
   f.appendChild(d);
-  document.body.appendChild(f);
+	aa.appendChild(f)
+  document.body.appendChild(aa);
 }
 function ws(s) {
   return s.indexOf(' ') >= 0;
