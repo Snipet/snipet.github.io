@@ -1,6 +1,7 @@
 function goto(){
 	var ifr = document.getElementById('results')
 	ifr.src = "search.html?q=" + document.getElementById('term').value; 
+	document.title = document.getElementById('term').value;
 	resizeIframe('results');
 }
 function resizeIframe(id) {
@@ -78,9 +79,6 @@ function search(){
   }
 }
 
-
-
-
 function add(title, img, desc, type, link){
   var a = document.createElement("h3");
   var b = document.createTextNode(title);
@@ -104,6 +102,8 @@ function add(title, img, desc, type, link){
   f.appendChild(d);
   document.body.appendChild(f);
 }
+
+
 function ws(s) {
   return s.indexOf(' ') >= 0;
 }
