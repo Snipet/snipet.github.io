@@ -22,7 +22,7 @@ h1,h2,h3{
 
 /*Gives your images a margin so they arn't squished, as well as a tiny border radius */
 img {
-  margin:7px;
+  margin:0px;
   border-radius:0px;
 }
 
