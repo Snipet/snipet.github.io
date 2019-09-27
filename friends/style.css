@@ -5,32 +5,6 @@ body, html {
   margin:0px;
   padding:0px;
 }
-div.headnav {
-	width:100%;
-	height:60px;
-	margin:0px;
-	background-color:#006ae3;
-	position:fixed;
-	
-}
-.navbutton {
-        color: white;
-        padding: 14px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-	font-weight:900;
-	transition:0.05;
-}
-.navbutton:hover {
-	color:#eee;
-	text-decoration: none;
-	transition:0.05s;
-}
-
-a:hover, a:activate {
-  font-decoration:none;
-}
 
 /* This is what you'll want to put all of your content in. It gives your page a more modern look. You'll need to define the
 color in the div element itsef */
@@ -46,13 +20,13 @@ h1,h2,h3{
   font-family:Papyrus;
 }
 
-/*Gives your images a margin so they arn't squished, as well as a tiny border radius */
-img {
-  margin:7px;
-  border-radius:3px;
-}
-
 /* Spaces out your text so it doesn't get squished */
 p{
   margin:4px;
+}
+
+body {
+	background-image: url("circles.gif");
+	background-repeat: repeat;
+	color: #0062ff
 }
