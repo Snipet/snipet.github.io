@@ -20,12 +20,6 @@ h1,h2,h3{
   font-family:Papyrus;
 }
 
-/*Gives your images a margin so they arn't squished, as well as a tiny border radius */
-img {
-  margin:0px;
-  border-radius:0px;
-}
-
 /* Spaces out your text so it doesn't get squished */
 p{
   margin:4px;
