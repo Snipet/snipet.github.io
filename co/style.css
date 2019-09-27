@@ -24,10 +24,6 @@ body,html{
 }
 h1{margin:0;}
 
-.info{
-	margin-left: 15px;
-}
-
 .pic{
 	width:100%;
 	background-color: #262626;
@@ -100,6 +96,8 @@ a,a:hover{
 	text-align:center;
 }
 .info{
-	margin:7;
+	margin:7px;
 	text-align:center;
+	margin-left: 15px;
+	font-size:25px;
 }
