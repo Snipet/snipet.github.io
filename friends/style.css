@@ -33,8 +33,5 @@ p{
 
 body {
 	background-image: url("circles.gif");
-}
-
-body {
-	color: blue;
+	background-repeat: repeat;
 }
