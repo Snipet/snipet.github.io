@@ -1,5 +1,5 @@
 //Onload for article player
-function load-a(){
+function loadPlayer(){
 	$("#nav").load("/co/responsive/nav.html");
 	var url = new URL(location.href);
 	var path = url.searchParams.get("p");
