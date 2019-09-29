@@ -4,7 +4,7 @@ function loadPlayer(){
 	var url = new URL(location.href);
 	var path = url.searchParams.get("p");
 	var a = url.searchParams.get("a");
-	$("#article").load(path + ".html");
+	$("#article").load(a + ".html");
 }
 //function for index
 function loadIndex(){
