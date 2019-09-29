@@ -1,1 +1,14 @@
-
+body{
+  background-color:#266dfc;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family:Quicksand;
+}
+.head-text{
+  font-size:70px;
+  text-align:center;
+}
+.desc{
+  font-family:30px;
+  text-align:center;
+}
