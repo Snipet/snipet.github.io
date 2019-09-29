@@ -7,6 +7,6 @@ function loadPlayer(){
 	$("#article").load(path + ".html #" + a);
 }
 //function for index
-function load-i(){
+function loadIndex(){
 	$("#nav").load("/co/responsive/nav.html");
 }
